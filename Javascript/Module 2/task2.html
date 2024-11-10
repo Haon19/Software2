@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2 / Module 2</title>
+</head>
+<body>
+<ol id = "target"></ol>
+<script>
+  'use strict';
+
+  let participants = prompt("How many participants in your game?")
+  let array = []
+  for(let i = 0; i < participants;i++){
+    array.push((prompt("Enter players name")))
+  }
+  array.sort()
+
+  document.querySelector('#target').innerHTML = array
+
+
+</script>
+</body>
+</html>

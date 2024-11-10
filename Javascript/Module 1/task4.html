@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 4 / Module 1</title>
+</head>
+<body>
+<h1>Start</h1>
+<p id="target"></p>
+
+<script>
+    'use strict';
+
+    let name = prompt("entre your name");
+
+    function getRandomIntInclusive(min, max) {
+        const minCeiled = Math.ceil(min);
+        const maxFloored = Math.floor(max);
+        return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled); // The maximum is inclusive and the minimum is inclusive
+    }
+    let house = ''
+    let random = getRandomIntInclusive(1,4)
+    if (random === 1){
+        house = 'Hufflepuff'
+    } else if (random === 2){
+      house = 'Slytherin'
+    } else if (random === 3){
+      house = 'Gryffindor'
+    } else {
+      house = 'Ravenclaw'
+    }
+
+    document.querySelector('#target').innerHTML = name + ' you are ' + house + '!';
+
+</script>
+</body>
+</html>

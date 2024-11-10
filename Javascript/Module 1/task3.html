@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task3 / Module 1</title>
+</head>
+<body>
+<h1>Header</h1>
+<p id='target1'></p>
+<p id='target2'></p>
+<p id='target3'></p>
+<script>
+  'use strict';
+
+  let x = parseInt(prompt("Enter a number"));
+  let y = parseInt(prompt("Enter a number"));
+  let z = parseInt(prompt("Enter a number"));
+
+  let sum = x + y + z;
+  let avg = (x + y + z)/3;
+  let product = x * y * z;
+
+  let sumString = sum.toString();
+  let avgString = avg.toString();
+  let productString = product.toString();
+
+  document.querySelector('#target1').innerHTML = 'The Sum ' + sumString + '!';
+  document.querySelector('#target2').innerHTML = 'The Average ' + avgString + '!';
+  document.querySelector('#target3').innerHTML = 'The Product ' + productString + '!';
+
+</script>
+</body>
+</html>
